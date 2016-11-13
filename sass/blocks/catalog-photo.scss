@@ -1,0 +1,8 @@
+.catalog-photo__wrapper {
+  @include container;
+  min-width: 1200px;
+  min-height: 401px;
+  background-image: url("../img/catalog.jpg");
+  background-repeat: no-repeat;
+  margin-bottom: 100px;
+}

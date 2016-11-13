@@ -36,7 +36,8 @@
       border-bottom: 1px solid $white;
       cursor: text;
       font-family: inherit;
-
+      min-height: 175px;
+      max-height: 175px;
     }
     textarea:focus {
       outline: none;

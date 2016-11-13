@@ -55,9 +55,8 @@ body {
   align-self: baseline; }
 
 .page-header__search--open:focus {
-  background-color: #ffffff;
   outline: none;
-  color: #000000; }
+  color: #ffffff; }
 
 .page-header__menu--open {
   position: absolute;
@@ -106,7 +105,7 @@ body {
 :-ms-input-placeholder {
   color: #ffffff; }
 
-.photo__wrapper {
+.about-photo__wrapper {
   width: 1200px;
   margin: 0 auto;
   min-width: 1200px;
@@ -128,7 +127,8 @@ body {
     font-size: 18px;
     line-height: 24px;
     margin-left: 210px;
-    margin-right: 220px; }
+    margin-right: 220px;
+    color: #9a9a9a; }
 
 .differences__wrapper {
   width: 1200px;
@@ -144,7 +144,8 @@ body {
     font-size: 18px;
     line-height: 24px;
     margin-left: 210px;
-    margin-right: 220px; }
+    margin-right: 220px;
+    color: #9a9a9a; }
 
 .differences__items {
   display: flex;
@@ -165,7 +166,8 @@ body {
     margin: 0;
     padding-bottom: 50px;
     font-size: 18px;
-    line-height: 24px; }
+    line-height: 24px;
+    color: #9a9a9a; }
 
 .clients__wrapper {
   width: 1200px;
@@ -201,7 +203,8 @@ body {
     font-size: 18px;
     line-height: 24px;
     margin-left: 210px;
-    margin-right: 220px; }
+    margin-right: 220px;
+    color: #9a9a9a; }
 
 .questions__wrapper {
   width: 1200px;
@@ -237,7 +240,9 @@ body {
     border: 0;
     border-bottom: 1px solid #ffffff;
     cursor: text;
-    font-family: inherit; }
+    font-family: inherit;
+    min-height: 175px;
+    max-height: 175px; }
   .questions textarea:focus {
     outline: none; }
   .questions button {
@@ -303,3 +308,130 @@ body {
     margin-top: 20px;
     font-size: 12px;
     line-height: 16px; }
+
+.catalog-photo__wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  min-width: 1200px;
+  min-height: 401px;
+  background-image: url("../img/catalog.jpg");
+  background-repeat: no-repeat;
+  margin-bottom: 100px; }
+
+.catalog__wrapper {
+  width: 1200px;
+  margin: 0 auto; }
+  .catalog__wrapper h2 {
+    font-size: 28px;
+    line-height: 16px;
+    text-transform: uppercase;
+    padding-bottom: 140px;
+    border-bottom: 1px solid #e8e8e8;
+    margin: auto;
+    margin-bottom: 60px;
+    margin-top: 0;
+    max-width: 980px;
+    text-align: center; }
+
+.catalog__items {
+  max-width: 979px;
+  display: flex;
+  flex-direction: column;
+  margin: auto; }
+
+.catalog__item {
+  max-width: 979px;
+  display: flex;
+  flex-direction: row; }
+
+.catalog__photos {
+  line-height: 0;
+  width: 490px; }
+
+.catalog__description {
+  width: 490px;
+  padding-left: 60px; }
+  .catalog__description h3 {
+    color: #000000;
+    font-size: 24px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+    margin-top: 110px; }
+  .catalog__description h3:nth-child(2n) {
+    margin-top: 60px; }
+  .catalog__description h3:hover {
+    color: #e33b3b; }
+  .catalog__description p {
+    font-size: 18px;
+    line-height: 24px;
+    color: #9a9a9a;
+    margin-top: 40px;
+    max-width: 330px; }
+  .catalog__description ul {
+    margin: 0;
+    padding: 0;
+    margin-top: 60px; }
+  .catalog__description li {
+    list-style-type: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px; }
+  .catalog__description li:hover {
+    color: #e33b3b; }
+  .catalog__description li:before {
+    content: "- "; }
+  .catalog__description li:hover:before {
+    color: #e33b3b; }
+
+.brand-wrapper {
+  width: 1200px;
+  margin: 0 auto; }
+  .brand-wrapper h2 {
+    font-size: 28px;
+    line-height: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 110px; }
+
+.brand__items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 300px;
+  min-width: 980px;
+  max-width: 980px;
+  box-sizing: content-box; }
+
+.brand__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-width: 300px;
+  max-width: 300px;
+  min-height: 200px;
+  max-height: 200px; }
+  .brand__item img {
+    border: 1px solid #f7f7f7;
+    padding-top: 40px;
+    padding-bottom: 38px;
+    padding-left: 55px;
+    padding-right: 55px; }
+  .brand__item span {
+    margin-top: 30px; }
+
+.brand__item:nth-child(2) img {
+  padding-top: 50px;
+  padding-bottom: 53px;
+  padding-left: 67px;
+  padding-right: 67px; }
+
+.brand__item:nth-child(3) img {
+  padding-top: 55px;
+  padding-bottom: 62px;
+  padding-left: 50px;
+  padding-right: 50px; }
