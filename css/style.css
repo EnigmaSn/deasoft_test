@@ -300,4 +300,6 @@ body {
   display: flex;
   align-self: center; }
   .page-footer__copyright span {
-    margin-top: 20px; }
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 16px; }
