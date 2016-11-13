@@ -12,23 +12,24 @@
   <header class="page-header">
     <div class="page-header__wrapper">
       <div class="page-header__logo">
-        <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+        <a href="index.html"><img src="img/logo.png" width="220" height="60" alt="logo"></a>
       </div>
       <div class="page-header__nav">
         <div class="page-header__search-tab">
           <input class="page-header__search page-header__search--open" type="search" placeholder="Поиск...">
           <a class="page-header__search page-header__search--close" href="#"><img src="img/search.png" alt="search"></a>
         </div>
-        <a href="#" class="page-header__menu--close">
+        <a href="#" class="page-header__menu page-header__menu--close">
           <img src="img/menu.png" alt="menu">
         </a>
-        <div class="page-header__menu--open">
+        <div class="page-header__menu page-header__menu--open">
+          <button class="page-header__menu-close" type="button" title="Закрыть">Закрыть</button>
           <ul>
-            <li class="page-header__menu_about"><a href="#">О компании</a></li>
-            <li class="page-header__menu_catalog"><a href="catalog.html">Продукция</a></li>
-            <li class="page-header__menu_news">Новости</a></li>
-            <li class="page-header__menu_architect"><a href="#">Архитекторам</a></li>
-            <li class="page-header__menu_contacts"><a href="#">Контакты</a></li>
+            <li class="page-header__menu-about"><a href="index.html">О компании</a></li>
+            <li class="page-header__menu-catalog"><a href="#">Продукция</a></li>
+            <li class="page-header__menu-news"><a>Новости</a></li>
+            <li class="page-header__menu-architect"><a href="#">Архитекторам</a></li>
+            <li class="page-header__menu-contacts"><a href="#">Контакты</a></li>
           </ul>
         </div>
       </div>
@@ -44,7 +45,7 @@
 
     <section class="catalog">
       <div class="catalog__wrapper">
-        <h2>Каталог</h2>
+        <div class="catalog__title"><h2>Каталог</h2></div>
         <div class="catalog__items">
           <section class="catalog__item">
             <div class="catalog__photos">
@@ -97,7 +98,7 @@
 
     <section class="brand">
       <div class="brand-wrapper">
-        <h2>Бренды</h2>
+        <div class="brand__title"><h2>Бренды</h2></div>
         <div class="brand__items">
           <div class="brand__item">
             <img src="img/skaala.jpg" alt="Skaala">
@@ -117,7 +118,7 @@
 
     <section class="questions">
       <div class="questions__wrapper">
-        <h2>Есть вопросы?</h2>
+        <div class="questions__title"><h2>Есть вопросы?</h2></div>
         <form class="questions__form" action="#">
           <div>
             <input type="text" placeholder="Имя">
@@ -144,5 +145,7 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

@@ -6,7 +6,7 @@
       text-transform: uppercase;
       text-align: center;
       margin-top: 100px;
-      margin-bottom: 50px;
+      // padding-bottom: 100px;
   }
 }
 
@@ -14,4 +14,15 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-top: 70px;
+}
+.clients__title:after {
+  content: "";
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  width: 70px;
+  height: 4px;
+  background-color: #e8e8e8;
+  border-radius: 1px;
 }

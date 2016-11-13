@@ -16,3 +16,14 @@
       color: $p-color;
     }
 }
+
+.about-us__title:after {
+  content: "";
+  display: block;
+  margin: auto;
+  margin-top: -20px;
+  width: 70px;
+  height: 4px;
+  background-color: #e8e8e8;
+  border-radius: 1px;
+}

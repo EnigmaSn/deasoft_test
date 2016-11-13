@@ -16,11 +16,20 @@
       color: $p-color;
     }
 }
-
+.differences__title:after {
+  content: "";
+  display: block;
+  margin: auto;
+  margin-top: -20px;
+  width: 70px;
+  height: 4px;
+  background-color: #e8e8e8;
+  border-radius: 1px;
+}
 .differences__items {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .differences__item {
   display: flex;
@@ -28,11 +37,21 @@
   min-width: 335px;
   max-width: 335px;
   padding-top: 100px;
-  // margin-right: 70px;
+
     b {
       margin-bottom: 30px;
       font-size: 24px;
       line-height: 24px;
+    }
+    b:before {
+      content: "";
+      display: block;
+      width: 54px;
+      height: 49px;
+      background-position: -10px -10px;
+      background-image: url("../img/spritesheet.png");
+      background-repeat: no-repeat;
+      padding-bottom: 40px;
     }
     p {
       margin: 0;
@@ -41,4 +60,35 @@
       line-height: 24px;
       color: $p-color;
     }
+    p:after {
+      content: "";
+      display: block;
+      margin-top: 40px;
+      width: 70px;
+      height: 4px;
+      background-color: #e8e8e8;
+      border-radius: 1px;
+    }
+}
+
+.differences__item:nth-child(2) {
+  b:before {
+    content: "";
+    display: block;
+    width: 75px;
+    height: 49px;
+    background-position: -84px -10px;
+    background-image: url("../img/spritesheet.png");
+  }
+}
+
+.differences__item:nth-child(3) {
+  b:before {
+    content: "";
+    display: block;
+    width: 74px;
+    height: 49px;
+    background-position: -179px -10px;
+    background-image: url("../img/spritesheet.png");
+  }
 }

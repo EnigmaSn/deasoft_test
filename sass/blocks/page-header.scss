@@ -44,10 +44,14 @@
     cursor: text;
     padding-bottom: 5px;
     align-self: baseline;
+    display: none;
     }
   &--open:focus {
     outline: none;
     color: $white;
+  }
+  &--open-show {
+    display: flex;
   }
 }
 
@@ -87,11 +91,60 @@
       a:hover {
         color: $red;
       }
+      button {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: 40px;
+        right: 170px;
+        font-size: 0;
+        border: 0;
+        cursor: pointer;
+        background-color: $white;
+      }
+      button:focus {
+        outline: none;
+      }
+      button:before,
+      button:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 0px;
+        width: 25px;
+        height: 3px;
+        background-color: $black;
+        border-radius: 1px;
+      }
+      button:before {
+        transform: rotate(45deg);
+      }
+      button:after {
+        transform: rotate(-45deg);
+      }
+  }
+  &--open-show {
+    display: flex;
   }
   &--close {
     margin-bottom: 10px;
-    padding-left: 60px;
+    margin-left: 60px;
+    position: relative;
   }
+}
+
+.page-header__menu--close:before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: #b23030;
+    border-radius: 1px;
+    transform: rotate(90deg);
+    right: 43px;
+    top: 15px;
+    position: absolute;
 }
 
 ::-webkit-input-placeholder {
