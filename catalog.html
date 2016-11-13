@@ -15,10 +15,10 @@
         <img src="img/logo.png" alt="logo">
       </div>
       <div class="page-header__nav">
-        <input class="page-header__search page-header__search--open" type="search">
-        <a class="page-header__search page-header__search--close" href="#">
-          <img src="img/search.png" alt="search">
-        </a>
+        <div class="page-header__search-tab">
+          <input class="page-header__search page-header__search--open" type="search" placeholder="Поиск...">
+          <a class="page-header__search page-header__search--close" href="#"><img src="img/search.png" alt="search"></a>
+        </div>
         <a href="#" class="page-header__menu--close">
           <img src="img/menu.png" alt="menu">
         </a>
@@ -126,7 +126,17 @@
   </main>
 
   <footer class="page-footer">
-    <span>Copyright © 2016 Scandic. Все права защищены</span>
+    <div class="page-footer__wrapper">
+      <div class="page-footer__circles">
+        <div class="page-footer__circle"></div>
+        <div class="page-footer__circle"></div>
+        <div class="page-footer__circle"></div>
+        <div class="page-footer__circle"></div>
+      </div>
+      <div>
+        <span>Copyright © 2016 Scandic. Все права защищены</span>
+      </div>
+    </div>
   </footer>
 </body>
 </html>

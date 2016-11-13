@@ -1,0 +1,27 @@
+.page-footer__wrapper {
+  @include container;
+  min-height: 135px;
+  max-height: 135px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.page-footer__circles {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+.page-footer__circle {
+  width: 35px;
+  height: 35px;
+  background-color: $gray;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.page-footer__copyright {
+  display: flex;
+  align-self: center;
+    span {
+      margin-top: 20px;
+    }
+}

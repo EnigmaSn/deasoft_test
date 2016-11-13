@@ -1,0 +1,17 @@
+.about-us__wrapper {
+  @include container;
+    h2 {
+      font-size: 28px;
+      line-height: 16px;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 100px;
+      margin-bottom: 50px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 24px;
+      margin-left: 210px;
+      margin-right: 220px;
+    }
+}

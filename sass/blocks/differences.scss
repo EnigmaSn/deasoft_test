@@ -1,0 +1,42 @@
+.differences__wrapper {
+  @include container;
+    h2 {
+      font-size: 28px;
+      line-height: 16px;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 100px;
+      margin-bottom: 50px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 24px;
+      margin-left: 210px;
+      margin-right: 220px;
+    }
+}
+
+.differences__items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.differences__item {
+  display: flex;
+  flex-direction: column;
+  min-width: 335px;
+  max-width: 335px;
+  padding-top: 100px;
+  // margin-right: 70px;
+    b {
+      margin-bottom: 30px;
+      font-size: 24px;
+      line-height: 24px;
+    }
+    p {
+      margin: 0;
+      padding-bottom: 50px;
+      font-size: 18px;
+      line-height: 24px;
+    }
+}
